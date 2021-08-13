@@ -1,2 +1,1 @@
-# js-blackjack
-Así dejamos el código en la sección 6
+HTML5, CSS3, JavaScript, Bootstrap5, UnderscoreJs
