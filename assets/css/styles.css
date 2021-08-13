@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+html,
+body {
+  background: rgb(7, 75, 40);
+  background: linear-gradient(119deg, rgba(7, 75, 40, 1) 0%, rgba(123, 178, 150, 1) 100%);
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 62.5%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+
+.titulo {
+  background: rgb(20, 21, 20);
+  background: linear-gradient(119deg, rgba(20, 21, 20, 1) 0%, rgba(60, 62, 61, 1) 100%);
+  box-shadow: -4px 10px 45px -1px rgba(0,0,0,0.62);
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container-jugadores {
+  position: relative;
+}
+
+.container-row-jugador {
+  margin: auto;
+}
+
+.mesa::after {
+  animation: text-shadow 5s ease-in-out infinite;
+  bottom: 0;
+  content: 'Blackjack';
+  font-family: 'Niconne', cursive;
+  font-size: 10rem;
+  left: 0;
+  opacity: .03;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 30rem;
+  z-index: 0;
+}
+
+h2,
+small {
+  font-size: 2rem;
+}
+
+.container-jugador-carta {
+  text-align: center;
+}
+
+.divCartas {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.carta {
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  position: relative;
+  margin-bottom: -9rem;
+  width: 8rem;
+}
+
+#computadora-cartas,
+#jugador-cartas {
+  height: 22rem;
+}
+
+.modal-title{
+  font-size: 1.7rem;
+}
+
+.modal-body {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes text-shadow {
+  0% {  
+      transform: translateY(0);
+      text-shadow: 
+          0 0 0 #0c2ffb, 
+          0 0 0 #2cfcfd, 
+          0 0 0 #fb203b, 
+          0 0 0 #fefc4b;
+  }
+
+  20% {  
+      transform: translateY(-1em);
+      text-shadow: 
+          0 0.125em 0 #0c2ffb, 
+          0 0.25em 0 #2cfcfd, 
+          0 -0.125em 0 #fb203b, 
+          0 -0.25em 0 #fefc4b;
+  }
+
+  40% {  
+      transform: translateY(0.5em);
+      text-shadow: 
+          0 -0.0625em 0 #0c2ffb, 
+          0 -0.125em 0 #2cfcfd, 
+          0 0.0625em 0 #fb203b, 
+          0 0.125em 0 #fefc4b;
+  }
+  
+ 60% {
+      transform: translateY(-0.25em);
+      text-shadow: 
+          0 0.03125em 0 #0c2ffb, 
+          0 0.0625em 0 #2cfcfd, 
+          0 -0.03125em 0 #fb203b, 
+          0 -0.0625em 0 #fefc4b;
+  }
+
+  80% {  
+      transform: translateY(0);
+      text-shadow: 
+          0 0 0 #0c2ffb, 
+          0 0 0 #2cfcfd, 
+          0 0 0 #fb203b, 
+          0 0 0 #fefc4b;
+  }
+
+  90% {
+    transform: translateY(-0.25em);
+    text-shadow: 
+        0 0.03125em 0 #0c2ffb, 
+        0 0.0625em 0 #2cfcfd, 
+        0 -0.03125em 0 #fb203b, 
+        0 -0.0625em 0 #fefc4b;
+}
+
+}

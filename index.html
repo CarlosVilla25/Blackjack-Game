@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header class="titulo">
+    Blackjack
+  </header>
+  <div class="mesa">
+  </div>
+  <div class="row mt-2">
+    <div id="divBotones" class="col text-center">
+      <button id="btnNuevo" class="btn btn-danger me-4">Nuevo Juego</button>
+      <button id="btnPedir" disabled="disabled" class="btn btn-primary me-4">Pedir carta</button>
+      <button id="btnDetener" disabled="disabled" class="btn btn-primary">Detener</button>
+    </div>
+  </div>
+  <div class="container-jugadores">
+    <div class="row container mt-2 container-row-jugador">
+      <div class="col container-jugador-carta">
+        <h2>Computadora - <small>0</small></h2>
+        <div id="computadora-cartas" class="divCartas">
+        </div>
+      </div>
+    </div>
+    <div class="row container container-row-jugador">
+      <div class="col container-jugador-carta">
+        <h2>Jugador 1 - <small>0</small></h2>
+        <div id="jugador-cartas" class="divCartas">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-black" id="exampleModalLabel">Blackjack</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id='modalBody' class="modal-body text-dark">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src='assets/js/underscore-min.js'></script>
+  <script src='assets/js/juego.js'></script>
+</body>
+
+</html>
